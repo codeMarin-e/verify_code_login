@@ -31,8 +31,7 @@ class VerifyCodeSend extends Notification
      */
     public function via($notifiable)
     {
-//        dd( config('marinar_verify_code_login.notification_channels') );
-        return ['mail', \App\Models\FrontSmsChannel::class];
+        return config('marinar_verify_code_login.notification_channels');
     }
 
     /**
