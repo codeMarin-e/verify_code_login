@@ -1,0 +1,29 @@
+{
+    "name": "marinar/verify_code_login",
+    "description": "Verify login with code",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marin Ivanov",
+            "email": "marin@dev.nddesign.no"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Marinar\\VerifyCodeLogin\\": "src/"
+        }
+    },
+
+    "require": {
+        "marinar/marinar": "*",
+        "marinar/sms_channel": "*"
+    },
+    "extra": {
+        "marinar": {
+            "module": false,
+            "plugin": true,
+            "addon_to": false
+        }
+    }
+}
